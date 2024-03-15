@@ -37,7 +37,7 @@ namespace MediatRDemo.Controllers
             
         }
 
-        [HttpPatch]
+        [HttpPut]
         [Route("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> UpdateAsync(int id, [FromBody] ContactUpdateCommand request)
